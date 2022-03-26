@@ -1,0 +1,22 @@
+<html>
+    <head><title>onmouse</title></head>
+    <body>
+        <center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdZl7aWli3wcqGgjW3STqiLjoib61qogyXdw&usqp=CAU"height="200"width="200"id="t1">
+        </center>
+        <center>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_AuDfPmWLgEoQKxQ-4zj4n4Ie3D82xxtl-w&usqp=CAU"height="100px"width="100px"onMouseOver="setImage(this)"onMouseOut="setDefoultImage()"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIs7m9hcXTQYExAJe-YAiMEZYZT1FyYkhowA&usqp=CAU"heigth="100px"width="100px"onMouseOver="setImage(this)"onMouseOut="setDefoultImage()"/>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPC7fMS8HkAnQ1jahudGNQRQznVp1hOQ2Ihg&usqp=CAU"height="100px"widht="100px"onMouseOver="setImage(this)"onMouseOut="setDefoultImage()"/>
+        </center>
+
+    </body>
+    <script>
+        function setImage(req){
+            t1.src=req.src;
+        }
+        function setDefoultImage(req){
+            t1.src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdZl7aWli3wcqGgjW3STqiLjoib61qogyXdw&usqp=CAU";
+        }
+    </script>
+</html>

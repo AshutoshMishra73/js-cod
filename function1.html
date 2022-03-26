@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>swap picture</title>
+    </head>
+    <body>
+        <center>   
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/1200px-Image_created_with_a_mobile_phone.png"height="400px"width="400px"id="t1">
+        
+        <img src="https://www.industrialempathy.com/img/remote/ZiClJf-1920w.jpg"height="400px"width="400px"id="t2">
+    </center>
+        <center>
+            <input type="button"value="swap"onClick="swap()"/>
+        </center>    
+            
+        
+    </body>
+    <script>
+        function swap(){
+            let t;
+            t=t1.src;
+            t1.src=t2.src;
+            t2.src=t;
+        }
+    </script>
+`</html>

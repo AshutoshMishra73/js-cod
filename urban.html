@@ -1,0 +1,52 @@
+<html>
+    <head><title>urban clube</title>
+        <style>
+         #status{
+          height: 50px;
+         width: 200px;
+         border: 2px solid red; 
+         }
+         .col-box{
+             display: inline-block;
+             height: 20px;
+            width: 20px;
+            cursor: pointer;
+
+         }
+        </style>
+    </head>
+    <body>
+        <div>
+        <input type="tex"id="status">
+    
+    <button onclick="uploadstatus()">post</button>
+    </div><br><br>
+    <div style="background-color: pink;"class="col-box"></div>
+    <div style="background-color: cyan;"class="col-box"></div>
+    <div style="background-color: yellow;"class="col-box"></div>
+    <div style="background-color: red;"class="col-box"></div>
+    </body>
+    <script>
+        let colBox=document.getElementsByClassName("col-box");
+        for(let i=0;i<colBox.lenth;i++){
+            colBox[i].addEventListener("cluck",function(){
+             selectedcolor=this.style.background;
+            });
+        }
+        function uploadstatus(){
+            let status=document.getElementById("status").value;
+            if(status==""){
+            return
+            }
+            let statusBox=document.getElementById("status"); 
+            statusBox.style.background=selectedcolor;
+            statusBox.style.height="200px";
+            statusBox.style.width="200px";
+            statusBox.style.margin="auto";
+            statusBox.style.color="white";
+            statusBox.style.textAlign="center";
+            statusBox.styel.lineHeight="200px";
+            statusBox.innerHTML=status;
+        }
+    </script>
+</html>
